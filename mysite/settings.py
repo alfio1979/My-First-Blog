@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+from django.conf.global_settings import LOGIN_REDIRECT_URL
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -18,6 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'of!v=wjcnu!jx8)%*ao=&63a^qz8mzstw*4^l%#%xr01yls88_'
+LOGIN_REDIRECT_URL='/'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
